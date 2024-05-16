@@ -1,0 +1,71 @@
+body {
+    background-image:url('https://wac-cdn.atlassian.com/dam/jcr:48f73fa9-325e-4663-a743-daba2a0f1397/jira-social%20@2x.png') ;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.headline{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 4rem;
+    text-shadow: 10px 10px 10px black;
+}
+.Content_container{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.Content_container h2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-shadow: 10px 10px 10px black;
+}
+.Member_image{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+.Member_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); 
+    transition: transform 0.5s; 
+    backface-visibility: hidden; 
+}
+.Member_info p{
+    font-size: 3rem;
+    color:#fff;
+    text-shadow: 10px 10px 10px black;
+}
+.Member_container:hover .Member_image {
+    transform: rotateY(180deg); 
+}
+.Member_container:hover .Member_info {
+    transform: rotateY(0deg);
+}
+.footer {
+    background-color: #1b9be081;
+    color: #fff;
+    text-shadow: 10px 10px 10px black;
+    text-align: center;
+    padding: 20px;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    font-size: 2rem;
+}
